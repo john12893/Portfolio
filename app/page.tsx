@@ -9,18 +9,18 @@ import {
 } from "lucide-react";
 
 const cadWork = [
-  { src: "/assets/cad/impeller-cutaway.jpg", title: "Sectioned flow component", note: "Cutaway geometry and internal form" },
-  { src: "/assets/cad/rotor-housing.jpg", title: "Rotor housing", note: "Reflective material and radial geometry" },
-  { src: "/assets/cad/mounting-bracket.jpg", title: "Mounting bracket", note: "Functional features and softened transitions" },
-  { src: "/assets/cad/mechanical-housing.jpg", title: "Mechanical housing", note: "Multi-part fit and fastening strategy" },
-  { src: "/assets/cad/turbine-wheel.jpg", title: "Radial turbine study", note: "Repeated blades and swept surfaces" },
-  { src: "/assets/cad/kinetic-sculpture.jpg", title: "Kinetic mechanism", note: "Gearing, balance, and presentation render" },
+  { src: "./assets/cad/impeller-cutaway.jpg", title: "Sectioned Funnel Component", note: "A cutaway view showing the shape inside" },
+  { src: "./assets/cad/rotor-housing.jpg", title: "Wheel Rim", note: "A life-sized car wheel rim model" },
+  { src: "./assets/cad/mounting-bracket.jpg", title: "Mounting Bracket", note: "A practical bracket with several mounting options" },
+  { src: "./assets/cad/mechanical-housing.jpg", title: "Mounted Double Bearing Unit", note: "An assembly using fasteners and two bearings" },
+  { src: "./assets/cad/turbine-wheel.jpg", title: "Radial Turbine", note: "A chance to practice repeated blades and curved surfaces" },
+  { src: "./assets/cad/kinetic-sculpture.jpg", title: "Pyramid Gyroscope", note: "A study of gears, balance, and rotation" },
 ];
 
 const skills = [
-  { index: "01", title: "Machine learning research", text: "Controlled experiments, long-tailed data, Vision Transformers, state-space models, medical image classification, and technical writing." },
-  { index: "02", title: "Mechanical design", text: "Siemens NX modeling, assemblies, mechanical linkages, part geometry, materials, and presentation-ready rendering." },
-  { index: "03", title: "Product engineering", text: "Full-stack interfaces, product flows, research tools, data-backed workspaces, and translating complex systems into clear user experiences." },
+  { index: "01", title: "Machine learning", text: "I am learning how to plan fair experiments, work with imbalanced data, compare model architectures, and explain the results clearly." },
+  { index: "02", title: "Mechanical design", text: "I use Siemens NX to practice part modeling, assemblies, linkages, materials, and making renders that clearly show how a design works." },
+  { index: "03", title: "Web development", text: "I like turning an idea into a working website, then improving the layout and wording until it is easy for someone else to use." },
 ];
 
 export default function Home() {
@@ -39,70 +39,70 @@ export default function Home() {
       </header>
 
       <section className="hero shell" id="top">
-        <div className="hero-kicker"><span className="status-dot" />Engineering + AI portfolio</div>
+        <div className="hero-kicker"><span className="status-dot" />Second-year student · Engineering portfolio</div>
         <div className="hero-grid">
-          <h1>I build systems that move between <em>code</em> and <em>hardware.</em></h1>
+          <h1>I learn by building, from <em>AI experiments</em> to <em>rover parts.</em></h1>
           <div className="hero-aside">
-            <p>I&apos;m Eric Li, a builder and researcher working across machine learning, robotics, mechanical design, and digital products.</p>
-            <a className="text-link" href="#work">Explore selected work <ArrowDown size={17} aria-hidden="true" /></a>
+            <p>I&apos;m Eric Li, a second-year college student interested in mechanical engineering, robotics, machine learning, and web development. This is where I keep the projects I am most excited about.</p>
+            <a className="text-link" href="#work">See my projects <ArrowDown size={17} aria-hidden="true" /></a>
           </div>
         </div>
         <div className="hero-rule"><span>Research</span><span>Robotics</span><span>CAD</span><span>Product</span></div>
       </section>
 
       <section className="work-section shell" id="work">
-        <div className="section-heading"><p>Selected work</p><span>Four disciplines, one engineering practice</span></div>
+        <div className="section-heading"><p>Projects I&apos;ve worked on</p><span>Research, team builds, CAD practice, and a web project</span></div>
 
         <article className="project project-orvanthis">
           <div className="project-number">01</div>
           <div className="orvanthis-visual">
-            <img className="orvanthis-stars" src="/assets/orvanthis/orvanthis-starfield.png" alt="" />
+            <img className="orvanthis-stars" src="./assets/orvanthis/orvanthis-starfield.png" alt="" />
             <div className="orvanthis-screen">
               <div className="browser-bar" aria-hidden="true"><span /><span /><span /></div>
-              <img src="/assets/orvanthis/orvanthis-logo.png" alt="Orvanthis logo" />
-              <p>Source-backed market intelligence</p>
+              <img src="./assets/orvanthis/orvanthis-logo-transparent.png" alt="Orvanthis logo" />
+              <p>A market research website</p>
             </div>
           </div>
           <div className="project-copy">
-            <div className="project-label"><Cpu size={17} aria-hidden="true" /> Product engineering</div>
+            <div className="project-label"><Cpu size={17} aria-hidden="true" /> Web project</div>
             <h2>Orvanthis</h2>
-            <p className="project-lead">A full-stack market research product designed to help investors organize evidence, track changing signals, and make uncertainty visible.</p>
-            <p>The build combines a narrative public site with an authenticated workspace, research tools, saved and monitored stocks, plan flows, and a source-conscious AI analyst experience.</p>
+            <p className="project-lead">I worked on a full-stack market research website that helps people organize stock information and keep track of companies they want to research.</p>
+            <p>This was one of my first chances to think about a website as a complete product. I worked with the public pages, user accounts, saved and monitored stocks, subscription screens, and an AI research tool.</p>
             <div className="tag-row" aria-label="Technologies and focus areas"><span>Next.js</span><span>Product UX</span><span>Cloudflare</span><span>AI research tools</span></div>
-            <a className="project-link" href="https://orvanthis-market-intelligence.fencer22.chatgpt.site" target="_blank" rel="noreferrer">Visit the live product <ArrowUpRight size={18} aria-hidden="true" /></a>
+            <a className="project-link" href="https://eric-portoflio-projects.com/" target="_blank" rel="noreferrer">Visit the live product <ArrowUpRight size={18} aria-hidden="true" /></a>
           </div>
         </article>
 
         <article className="project project-research" id="research">
           <div className="project-number">02</div>
-          <div className="paper-visual"><img src="/assets/research/paper-cover.png" alt="First page of Eric Li's paper comparing Mamba and self-attention models" /></div>
+          <div className="paper-visual"><img src="./assets/research/paper-cover.png" alt="First page of Eric Li's paper comparing Mamba and self-attention models" /></div>
           <div className="project-copy">
             <div className="project-label"><FileText size={17} aria-hidden="true" /> AI research</div>
             <h2>Mamba vs. self-attention under data imbalance</h2>
-            <p className="project-lead">An experimental comparison of compact Vision Mamba and Vision Transformer models across long-tailed general and medical image classification datasets.</p>
+            <p className="project-lead">I wanted to find out how two newer computer vision models handle datasets where some categories have a lot fewer examples than others.</p>
             <div className="research-stats">
               <div><strong>7</strong><span>datasets evaluated</span></div>
               <div><strong>3</strong><span>imbalance levels on CIFAR</span></div>
               <div><strong>300</strong><span>training epochs per run</span></div>
             </div>
-            <p>Vision Mamba outperformed the baseline Transformer across every CIFAR imbalance setting and most selected MedMNIST datasets. Stronger augmentation substantially narrowed the gap for the Transformer, highlighting training strategy as a key variable.</p>
-            <a className="project-link" href="/assets/research/mamba-vs-transformers.pdf" target="_blank" rel="noreferrer">Read the four-page paper <ArrowUpRight size={18} aria-hidden="true" /></a>
+            <p>I trained Vision Mamba and Vision Transformer models on CIFAR and medical image datasets. Mamba did better than the baseline Transformer in every CIFAR imbalance setting and most of the medical datasets. The Transformer got much closer after I used stronger data augmentation.</p>
+            <a className="project-link" href="./assets/research/mamba-vs-transformers.pdf" target="_blank" rel="noreferrer">Read my four-page paper <ArrowUpRight size={18} aria-hidden="true" /></a>
           </div>
         </article>
 
         <article className="project project-rover">
           <div className="project-number">03</div>
           <div className="rover-gallery">
-            <figure className="rover-main"><img src="/assets/rover/rover-full.png" alt="Full CAD model of the ASME robotics rover with six wheels" /></figure>
-            <figure><img src="/assets/rover/rover-electronics.png" alt="ASME rover electronics enclosure and internal components" /></figure>
-            <figure><img src="/assets/rover/rover-linkage.png" alt="Close-up CAD view of a rover linkage assembly" /></figure>
-            <figure><img src="/assets/rover/rover-suspension.png" alt="Articulated rover suspension linkage" /></figure>
+            <figure className="rover-main"><img src="./assets/rover/rover-full.png" alt="Full CAD model of the ASME robotics rover with six wheels" /></figure>
+            <figure><img src="./assets/rover/rover-electronics.png" alt="ASME rover electronics and internal components" /></figure>
+            <figure><img src="./assets/rover/rover-linkage.png" alt="Close-up CAD view of a rover linkage assembly" /></figure>
+            <figure><img src="./assets/rover/rover-suspension.png" alt="Rover suspension linkage" /></figure>
           </div>
           <div className="project-copy">
             <div className="project-label"><Orbit size={17} aria-hidden="true" /> Robotics</div>
             <h2>ASME robotics rover</h2>
-            <p className="project-lead">A six-wheel rover platform integrating a compact structural frame, articulated wheel supports, a central mechanism, and packaged electronics.</p>
-            <p>The CAD views document both system-level packaging and the smaller mechanical decisions that make the rover work: pivot geometry, linkages, accessible electronics, and modular framing.</p>
+            <p className="project-lead">This six-wheel rover project gave me experience looking at how a complete robot comes together instead of focusing on just one part.</p>
+            <p>The CAD views show the full rover, the electronics, and two of the linkage ideas. I especially liked seeing how the frame, wheel supports, pivots, and electronics all had to fit into the same space.</p>
             <div className="tag-row"><span>System integration</span><span>Mechanical linkages</span><span>CAD assembly</span></div>
           </div>
         </article>
@@ -110,7 +110,7 @@ export default function Home() {
         <article className="cad-project">
           <div className="cad-intro">
             <div><span className="project-number inline">04</span><div className="project-label"><Layers3 size={17} aria-hidden="true" /> Siemens NX</div></div>
-            <div><h2>Selected mechanical design studies</h2><p>A selection of individual part, surface, material, and mechanism studies. Each rendering explores a different modeling problem, from functional brackets to repeated radial geometry.</p></div>
+            <div><h2>Siemens NX models</h2><p>These are some of the individual parts and smaller assemblies I have modeled while learning Siemens NX. Each one helped me practice a different tool or design problem.</p></div>
           </div>
           <div className="cad-grid">
             {cadWork.map((item, index) => (
@@ -124,7 +124,7 @@ export default function Home() {
       </section>
 
       <section className="capabilities shell" id="capabilities">
-        <div className="section-heading light"><p>Capabilities</p><span>How I approach a problem</span></div>
+        <div className="section-heading light"><p>What I&apos;m learning</p><span>Skills I am building through these projects</span></div>
         <div className="capability-grid">
           {skills.map((skill) => <article key={skill.index}><span>{skill.index}</span><h3>{skill.title}</h3><p>{skill.text}</p></article>)}
         </div>
@@ -134,15 +134,15 @@ export default function Home() {
         <div className="about-mark" aria-hidden="true"><span>EL</span></div>
         <div className="about-copy">
           <p className="eyebrow">About</p>
-          <h2>Engineering is strongest when the disciplines connect.</h2>
-          <p>My work lives at the intersection of physical systems and computation. I enjoy moving from a question to a testable experiment, from a sketch to an assembly, and from a complex idea to a product people can use.</p>
+          <h2>I&apos;m still exploring what kind of engineer I want to become.</h2>
+          <p>That is why I like trying projects in several areas. Research teaches me how to test an idea, CAD teaches me how to think in three dimensions, robotics shows me how different systems connect, and web development lets me share what I build with other people.</p>
           <a className="text-link dark-link" href="#top">Back to top <ArrowDown className="rotate" size={17} aria-hidden="true" /></a>
         </div>
       </section>
 
       <footer className="site-footer shell">
-        <div><strong>Eric Li</strong><span>Engineering + AI portfolio</span></div>
-        <a href="#work">Selected work <MoveRight size={17} aria-hidden="true" /></a>
+        <div><strong>Eric Li</strong><span>Second-year student · Engineering portfolio</span></div>
+        <a href="#work">My projects <MoveRight size={17} aria-hidden="true" /></a>
       </footer>
     </main>
   );

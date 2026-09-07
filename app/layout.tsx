@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Eric Li — Engineering + AI Portfolio',
+  title: 'Eric Li — Engineering Portfolio',
   description:
-    'Selected work by Eric Li across machine learning research, robotics, Siemens NX mechanical design, and product engineering.',
+    'Projects by second-year college student Eric Li across machine learning, robotics, Siemens NX, and web development.',
 };
 
 export default function RootLayout({
