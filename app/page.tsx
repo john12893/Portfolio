@@ -15,7 +15,7 @@ const cadWork = [
   { src: "./assets/cad/mechanical-housing.jpg", title: "Mounted Double Bearing Unit", note: "An assembly using fasteners and two bearings" },
   { src: "./assets/cad/turbine-wheel.jpg", title: "Radial Turbine", note: "A chance to practice repeated blades and curved surfaces" },
   { src: "./assets/cad/kinetic-sculpture.jpg", title: "Pyramid Gyroscope", note: "A study of gears, balance, and rotation" },
-];
+];  
 
 const skills = [
   { index: "01", title: "Machine learning", text: "I am learning how to plan fair experiments, work with imbalanced data, compare model architectures, and explain the results clearly." },
@@ -68,7 +68,7 @@ export default function Home() {
             <h2>Orvanthis</h2>
             <p className="project-lead">I worked on a full-stack market research website that helps people organize stock information and keep track of companies they want to research.</p>
             <p>This was one of my first chances to think about a website as a complete product. I worked with the public pages, user accounts, saved and monitored stocks, subscription screens, and an AI research tool.</p>
-            <div className="tag-row" aria-label="Technologies and focus areas"><span>Next.js</span><span>Product UX</span><span>Cloudflare</span><span>AI research tools</span></div>
+            <div className="tag-row" aria-label="Technologies and focus areas"><span>Next.js</span><span>Product UX</span><span>Web Design</span><span>AI research tools</span></div>
             <a className="project-link" href="https://eric-portoflio-projects.com/" target="_blank" rel="noreferrer">Visit the live product <ArrowUpRight size={18} aria-hidden="true" /></a>
           </div>
         </article>
@@ -78,14 +78,13 @@ export default function Home() {
           <div className="paper-visual"><img src="./assets/research/paper-cover.png" alt="First page of Eric Li's paper comparing Mamba and self-attention models" /></div>
           <div className="project-copy">
             <div className="project-label"><FileText size={17} aria-hidden="true" /> AI research</div>
-            <h2>Mamba vs. self-attention under data imbalance</h2>
-            <p className="project-lead">I wanted to find out how two newer computer vision models handle datasets where some categories have a lot fewer examples than others.</p>
+            <h2>Mamba vs. Transformer under data imbalance</h2>
+            <p className="project-lead">I wanted to find out how two computer vision models handle datasets on imbalanced medical datasets.</p>
             <div className="research-stats">
-              <div><strong>7</strong><span>datasets evaluated</span></div>
-              <div><strong>3</strong><span>imbalance levels on CIFAR</span></div>
-              <div><strong>300</strong><span>training epochs per run</span></div>
+              <div><strong>2</strong><span>CIFAR datasets evaluated</span></div>
+              <div><strong>5</strong><span>imbalanced MEDMNIST datasets evaluated</span></div>
             </div>
-            <p>I trained Vision Mamba and Vision Transformer models on CIFAR and medical image datasets. Mamba did better than the baseline Transformer in every CIFAR imbalance setting and most of the medical datasets. The Transformer got much closer after I used stronger data augmentation.</p>
+            <p>I trained Vision Mamba and Vision Transformer models on CIFAR and medical image datasets. Mamba did better than the baseline Transformer in every CIFAR imbalance setting and most of the medical datasets. The Transformer got much closer after I used stronger image augmentations.</p>
             <a className="project-link" href="./assets/research/mamba-vs-transformers.pdf" target="_blank" rel="noreferrer">Read my four-page paper <ArrowUpRight size={18} aria-hidden="true" /></a>
           </div>
         </article>
