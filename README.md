@@ -4,7 +4,7 @@ This is my portfolio as a second-year college student interested in mechanical e
 
 ## View the portfolio
 
-[Open the live portfolio](https://john12893.github.io/eric-li-engineering-portfolio/)
+[Open the live portfolio](https://eric-li-engineering-portfolio.fencer22.chatgpt.site)
 
 ## Projects included
 
